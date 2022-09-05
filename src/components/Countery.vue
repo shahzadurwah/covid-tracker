@@ -1,16 +1,16 @@
 <template>
-  <div class="container">
+  
     <div class="row justify-content-center mt-4">
-      <col-6 class="text-center">
+      <div  class="col-sm-12 col-md-6 text-center">
         <select v-model="selected" @change="onchange">
           <option value="0">Select Countery</option>
           <option v-for="co in counteries" :key="co.ID" :value="co.ID">
             {{ co.Country }}
           </option>
         </select>
-      </col-6>
+      </div>
     </div>
-  </div>
+  
 </template>
 
 <script>

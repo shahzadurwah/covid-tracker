@@ -1,6 +1,7 @@
 <template>
- <div>
-   <navbar></navbar>
+  <navbar></navbar>
+ <div class="container-fluid">
+   
    <DataTitle :text="title" :dataDate="dataData"></DataTitle>
    <Databoxes :stats="stats"></Databoxes>
    <Countery :counteries="counteries" @get-countery="getcounteryData"></Countery>
@@ -10,6 +11,7 @@
  
   
  </div>
+
 </template>
 
 
